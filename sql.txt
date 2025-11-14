@@ -1,0 +1,100 @@
+INSERT INTO users (name, email, password, created_at, updated_at) VALUES
+(
+    'Enzo',
+    'admin@gmail.com',
+    '$2y$12$1za7Zr4UrwlXQxW1Bp5GbeSwlcp/zvriI1Bf4iGbF9F8iVZyX5ha6',
+    NOW(),
+    NOW()
+);
+
+INSERT INTO marcas (nome, created_at, updated_at) VALUES
+('BMW', NOW(), NOW()),
+('Chevrolet', NOW(), NOW()),
+('Honda', NOW(), NOW()),
+('Nissan', NOW(), NOW()),
+('Mercedes-Benz', NOW(), NOW()),
+('Hyundai', NOW(), NOW()),
+('Ford', NOW(), NOW());
+
+INSERT INTO modelos (nome, marca_id, created_at, updated_at) VALUES
+('320i', 1, NOW(), NOW()),                 -- BMW
+('Monza SLE', 2, NOW(), NOW()),            -- Chevrolet
+('Opala Comodoro Coupé', 2, NOW(), NOW()), -- Chevrolet
+('Civic Si K20', 3, NOW(), NOW()),         -- Honda
+('Frontier', 4, NOW(), NOW()),             -- Nissan
+('C280', 5, NOW(), NOW()),                 -- Mercedes
+('HB20', 6, NOW(), NOW()),                 -- Hyundai
+('Ka', 7, NOW(), NOW()),                   -- Ford
+('Pampa AP 1.8', 7, NOW(), NOW()),         -- Ford
+('Sonic LTZ', 2, NOW(), NOW());            -- Chevrolet
+
+INSERT INTO colors (nome, created_at, updated_at) VALUES
+('Branco', NOW(), NOW()),
+('Preto', NOW(), NOW()),
+('Prata', NOW(), NOW()),
+('Vermelho', NOW(), NOW()),
+('Azul', NOW(), NOW()),
+('Cinza', NOW(), NOW());
+
+INSERT INTO carros (marca_id, modelo_id, color_id, ano, quilometragem, valor, detalhes, created_at, updated_at) VALUES
+(1, 1, 1, 2015, 82000, 139900.00, 'BMW 320i completa, interior premium, manutenção em dia.', NOW(), NOW()),
+(2, 2, 3, 1989, 187000, 34900.00, 'Monza SLE clássico, muito bem conservado.', NOW(), NOW()),
+(2, 3, 5, 1985, 154000, 159900.00, 'Opala Comodoro Coupé raro, motor 6cc.', NOW(), NOW()),
+(3, 4, 4, 2008, 112000, 124900.00, 'Civic Si K20 esportivo, câmbio manual.', NOW(), NOW()),
+(4, 5, 2, 2015, 136000, 119900.00, 'Frontier 4x4 completa, pneus novos.', NOW(), NOW()),
+(5, 6, 6, 1995, 210000, 49900.00, 'Mercedes C280 clássico, interior em couro.', NOW(), NOW()),
+(6, 7, 6, 2025, 150, 89900.00, 'HB20 2025 0km, versão completa.', NOW(), NOW()),
+(7, 8, 1, 2012, 98000, 32900.00, 'Ford Ka econômico, ideal para cidade.', NOW(), NOW()),
+(7, 9, 4, 1993, 198000, 37900.00, 'Pampa AP 1.8 rara, ótima para projetos.', NOW(), NOW()),
+(2, 10, 2, 2012, 123000, 44900.00, 'Sonic LTZ automático, teto solar.', NOW(), NOW());
+
+INSERT INTO foto_carros (carro_id, url, principal, ordem, created_at, updated_at) VALUES
+-- BMW 320i
+(1, 'https://img.olx.com.br/images/21/216514203083558.webp', 1, 1, NOW(), NOW()),
+(1, 'https://s3.ecompletocarros.dev/images/lojas/164/veiculos/12697/veiculoInfoVeiculoImagesMobile/vehicle_image_1581128095_005bac4f4b604058a9eceb2df518b29f.jpeg', 0, 2, NOW(), NOW()),
+(1, 'https://cdn.buttercms.com/tC0YCV2SDy94IwGWhSsQ', 0, 3, NOW(), NOW()),
+
+-- Monza
+(2, 'https://i.ytimg.com/vi/X0dQVfb_YiE/maxresdefault.jpg', 1, 1, NOW(), NOW()),
+(2, 'https://www.picellileiloes.com.br/arquivos/leiloes/lotes/imagens/6127c55b6126a.jpg', 0, 2, NOW(), NOW()),
+(2, 'https://armazemdovovo.com.br/images/anuncio/avv-chevrolet-monza-sle-venda-iwti98r/foto-seq-22-636928516-avv-1707170157-dt-14-img-0424-1315851901.jpg', 0, 3, NOW(), NOW()),
+
+-- Opala
+(3, 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chevrolet_Opala_Comodoro_1978.jpg/1024px-Chevrolet_Opala_Comodoro_1978.jpg', 1, 1, NOW(), NOW()),
+(3, 'https://i.ytimg.com/vi/TzadHXKMhNY/maxresdefault.jpg', 0, 2, NOW(), NOW()),
+(3, 'https://armazemdovovo.com.br/images/anuncio/avv-chevrolet-opala-comodoro-coupe-venda-eza4fz7/foto-seq-20-1483058579-avv-838187085-dt-12-img-1136-139420695.jpg', 0, 3, NOW(), NOW()),
+
+-- Civic Si
+(4, 'https://i.pinimg.com/originals/1d/1c/50/1d1c508ea0dd6820f2f39f688697cfbe.jpg', 1, 1, NOW(), NOW()),
+(4, 'https://quatrorodas.abril.com.br/wp-content/uploads/2020/02/civic222.jpg-e1582901496461.jpg?quality=70&strip=info', 0, 2, NOW(), NOW()),
+(4, 'https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202509/20250921/honda-civic-2.0-si-16v-gasolina-4p-manual-WMIMAGEM15134674253.jpg', 0, 3, NOW(), NOW()),
+
+-- Frontier
+(5, 'https://s3.ecompletocarros.dev/images/lojas/108/veiculos/87481/veiculoInfoVeiculoImagesMobile/vehicle_image_1641939452_d41d8cd98f00b204e9800998ecf8427e.jpeg', 1, 1, NOW(), NOW()),
+(5, 'https://img1.icarros.com/dbimg/galeriaimgmodelo/2/23363_1', 0, 2, NOW(), NOW()),
+(5, 'https://s3.ecompletocarros.dev/images/lojas/141/veiculos/5866/veiculoInfoVeiculoImagesMobile/vehicle_image_1573623747_36e06fce1b7a4cf6948ac08b1541ede8.jpeg', 0, 3, NOW(), NOW()),
+
+-- C280
+(6, 'https://carangoslegais.com.br/wp-content/uploads/2023/03/Mercedes-c280-1995-caruso-1.jpg', 1, 1, NOW(), NOW()),
+(6, 'https://cdn.carrosp.com.br/img/6//mercedes-benz-c-280-7187114-61409375.webp', 0, 2, NOW(), NOW()),
+(6, 'https://www.picellileiloes.com.br/arquivos/leiloes/lotes/imagens/623cd93e3bb65.jpg', 0, 3, NOW(), NOW()),
+
+-- HB20
+(7, 'https://i0.statig.com.br/bancodeimagens/ax/2k/gn/ax2kgnaem2y83ifn3kyszaw3y.jpg', 1, 1, NOW(), NOW()),
+(7, 'https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/DCF2SC4YVVHRBIBHX67UKH5CTI.jpg?auth=ddd70a514f0343cfb531059277216e0fb39cc92ec7707f4ada9cb954748abe63&width=1600&height=1200', 0, 2, NOW(), NOW()),
+(7, 'https://www.autoo.com.br/fotos/2024/6/1280_960/hyundaiabre1-2_18062024_79093_1280_960.jpg', 0, 3, NOW(), NOW()),
+
+-- Ka
+(8, 'https://fotos.jornaldocarro.estadao.com.br/wp/jornal-do-carro/files/2011/08/ka.jpg', 1, 1, NOW(), NOW()),
+(8, 'https://image1.mobiauto.com.br/images/api/images/v1.0/301266969/transform/fl_progressive,f_webp,q_70,w_750', 0, 2, NOW(), NOW()),
+(8, 'https://images.usadosbr.com/manipulatedImages/media/gallery/7f/ca/01/ford-ka-1-0-8v-5-2012-fortaleza-ce-122ee608-gj--0-image-760x570-crop.webp', 0, 3, NOW(), NOW()),
+
+-- Pampa
+(9, 'https://motorprime.com.br/wp-content/uploads/2024/12/pampa-1-6754852282c51.webp', 1, 1, NOW(), NOW()),
+(9, 'https://img.olx.com.br/thumbs700x500/52/529504453030139.webp', 0, 2, NOW(), NOW()),
+(9, 'https://i.ytimg.com/vi/PQUBKjnB77E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDTRjXwa3ZvS48FNHXy9bbZUDbFWA', 0, 3, NOW(), NOW()),
+
+-- Sonic LTZ
+(10, 'https://carroom.com.br/carros/b7e3edb67d953e377a4abdc0e871712e-thumbjpeg-chevrolet-sonic-13599671-900-675-70.jpg', 1, 1, NOW(), NOW()),
+(10, 'https://s3.ecompletocarros.dev/images/lojas/274/veiculos/147061/veiculoInfoVeiculoImagesMobile/vehicle_image_1685384122_d41d8cd98f00b204e9800998ecf8427e.jpeg', 0, 2, NOW(), NOW()),
+(10, 'https://www.cnet.com/a/img/resize/037327366a1b8045d3afd96ab41dca326dd5c38e/hub/2011/11/07/accc2463-bb76-11e2-8a8e-0291187978f3/35020089_OVR.jpg?auto=webp&width=768', 0, 3, NOW(), NOW());
