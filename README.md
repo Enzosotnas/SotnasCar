@@ -1,5 +1,84 @@
 # Projeto Sotnascar
 
+## 📸 Prévia Geral do Projeto
+
+---
+
+## 📸 Prévia Geral do Projeto
+
+### 🏠 Página Inicial
+![Home](./screenshots/home.png)
+
+### ℹ️ Sobre
+![Sobre](./screenshots/sobre.png)
+
+### 🚗 Categorias
+![Categorias](./screenshots/categorias.png)
+
+### 🖼️ Portfólio
+![Portfolio](./screenshots/portfolio1.png)
+![Portfolio 2](./screenshots/portfolio2.png)
+![Portfolio 3](./screenshots/portfolio3.png)
+
+### 🚘 Estoque
+![Estoque](./screenshots/estoque1.png)
+![Estoque 2](./screenshots/estoque2.png)
+
+### 🔐 Login
+![Login](./screenshots/login.png)
+
+### 📝 Registro
+![Registro](./screenshots/registro.png)
+
+---
+
+## 🧭 Área Administrativa
+
+### 📊 Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+### 🏷️ Marcas
+
+#### ➕ Criar Marca
+![Criar Marca](./screenshots/marcas_create.png)
+
+#### 📋 Listagem de Marcas
+![Listar Marcas](./screenshots/marcas_list.png)
+
+---
+
+### 🚗 Modelos
+
+#### ➕ Criar Modelo
+![Criar Modelo](./screenshots/modelos_create.png)
+
+#### 📋 Modelos Cadastrados
+![Listar Modelos](./screenshots/modelos_list.png)
+
+---
+
+### 🎨 Cores
+
+#### ➕ Criar Cor
+![Criar Cor](./screenshots/cores_create.png)
+
+#### 📋 Cores Cadastradas
+![Listar Cores](./screenshots/cores_list.png)
+
+---
+
+### 🚘 Veículos
+
+#### ➕ Criar Veículo
+![Criar Veículo](./screenshots/veiculo_create.png)
+
+#### 📋 Veículos Cadastrados
+![Listar Veículos](./screenshots/veiculos_list.png)
+
+---
+
 ## Como rodar o projeto
 
 1. **Baixe/clonar o projeto**
