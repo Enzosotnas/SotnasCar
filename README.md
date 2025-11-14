@@ -22,6 +22,9 @@
 ![Estoque](./screenshots/estoque1.png)
 ![Estoque 2](./screenshots/estoque2.png)
 
+#### 🔍 Detalhes do Veículo
+![Detalhes do Veículo](./screenshots/veiculo_detalhes.png)
+
 ### 🔐 Login
 ![Login](./screenshots/login.png)
 
