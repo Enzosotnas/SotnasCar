@@ -4,8 +4,6 @@
 
 ---
 
-## 📸 Prévia Geral do Projeto
-
 ### 🏠 Página Inicial
 ![Home](./screenshots/home.png)
 
