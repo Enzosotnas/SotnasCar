@@ -16,9 +16,9 @@
 ![Categorias](./screenshots/categorias.png)
 
 ### 🖼️ Portfólio
-![Portfolio](./screenshots/portfolio1.png)
-![Portfolio 2](./screenshots/portfolio2.png)
-![Portfolio 3](./screenshots/portfolio3.png)
+![Portfolio](./screenshots/portifolio1.png)
+![Portfolio 2](./screenshots/portifolio2.png)
+![Portfolio 3](./screenshots/portifolio3.png)
 
 ### 🚘 Estoque
 ![Estoque](./screenshots/estoque1.png)
